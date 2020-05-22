@@ -1,5 +1,3 @@
-FROM nginx
+FROM nginx:alpine
 
- COPY content /usr/share/nginx/html
-
- COPY conf /etc/nginx
+COPY . /usr/share/nginx/html

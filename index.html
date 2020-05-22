@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>TODO APP Using DOM</title>
+</head>
+<style>
+    .main{
+        text-align: center;
+        margin: 150px auto auto auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container{
+        flex: 1;
+    }
+    .row-cols-3{
+        border: 1px solid blue;
+    }
+    .text{
+        border: transparent;
+        border-bottom: 1px solid grey;
+    }
+    .input-text{
+      padding: 10px 75px 10px 75px;
+    }
+
+    .input-text:focus{
+      padding: 10px 75px 10px 75px;
+
+      border: cadetblue;
+    }
+    #col1, #col2, #col3, #col4, #col5, #col6, #col7, #col8, #col9, #col10{
+      cursor: pointer;
+      color: blue;
+      border-bottom: 1px solid forestgreens;
+    }
+    #col1:hover, #col2:hover, #col3:hover, #col4:hover, #col5:hover, #col6:hover, #col7:hover, #col8:hover, #col9:hover, #col10:hover{
+      color: cornflowerblue;
+      cursor: pointer;
+    }
+
+</style>
+<body>
+  
+      <div class="container main">
+        <div class="row row-cols-1">
+          <div class="col">
+            <h1>To-Do List</h1>
+            <label for="textBox" class="label">What to do?</label>
+            <form action="">
+                
+                <input type="text" class="input-text" placeholder="Type here..."><br><br>
+                <input type="button" class="btnAdd btn btn-outline-secondary btn-lg" value="ADD" style="padding: 5px 60px 5px 60px;">
+            </form>
+          </div>
+        </div>
+        <br>
+          <div class="row row-cols-3" id="row">
+
+            <div class="col"> </div>
+            
+            <div class="col todo-list-items0"></div>
+            
+            <div class="col" id="col1"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items1">
+              
+              </div>
+            <div class="col" id="col2"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items2">
+              
+              </div>
+            <div class="col" id="col3"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items3">
+              
+              </div>
+            <div class="col" id="col4"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items4">
+              
+              </div>
+            <div class="col" id="col5"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items5">
+              
+              </div>
+            <div class="col" id="col6"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items6">
+              
+              </div>
+            <div class="col" id="col7"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items7">
+              
+              </div>
+            <div class="col" id="col8"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items8">
+              
+              </div>
+            <div class="col" id="col9"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items9">
+              
+              </div>
+            <div class="col" id="col10"> </div>
+
+            <div class="col"> </div>
+              <div class="col todo-list-items-label" id="col">
+              
+              </div>
+            <div class="col"> </div>
+          </div>
+      </div>
+
+    <!-- </div>   -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="todo-app.js"></script>
+</body>
+</html>
